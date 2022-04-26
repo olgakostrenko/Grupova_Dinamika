@@ -1,0 +1,183 @@
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD
+$ mkdir 26_04_22
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD
+$ cd 26_04_22/
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22
+$ git init
+Initialized empty Git repository in C:/GD/26_04_22/.git/
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (main)
+$ touch 1.txt
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (main)
+$ git add 1.txt
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (main)
+$ git commit -m "1"
+[main (root-commit) 02fa1ab] 1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 1.txt
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (main)
+$ git add 1.txt
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (main)
+$ git commit -m "2"
+[main 16b544e] 2
+ 1 file changed, 1 insertion(+)
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (main)
+$ git add 1.txt
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (main)
+$ git commit -m "3"
+[main 6e344aa] 3
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (main)
+$ git add 1.txt
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (main)
+$ git commit -m "4"
+[main 57ecceb] 4
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (main)
+$ git branch Test
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (main)
+$ git checkout Test
+Switched to branch 'Test'
+
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (Test)
+$
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (Test)
+$ git status
+On branch Test
+nothing to commit, working tree clean
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (Test)
+$ git status
+On branch Test
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (Test)
+$ git add 1.txt
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (Test)
+$ git commit -m "2_1"
+[Test 8752e20] 2_1
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (Test)
+$ git add 1.txt
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (Test)
+$ git commit -m "2_2"
+[Test e400bf2] 2_2
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (Test)
+$ git add 1.txt
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (Test)
+$ git commit -m "2_3"
+[Test ab1f577] 2_3
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (Test)
+$ git add 1. txt
+fatal: pathspec '1.' did not match any files
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (Test)
+$ git commit -m "2_4"
+On branch Test
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (Test)
+$ git status
+On branch Test
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (Test)
+$ git add 1.txt
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (Test)
+$ git commit -m "2_4"
+[Test 5e8fc67] 2_4
+ 1 file changed, 1 insertion(+)
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (Test)
+$ git checkout main
+Switched to branch 'main'
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (main)
+$ git merge Test
+Updating 57ecceb..5e8fc67
+Fast-forward
+ 1.txt | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+olgak@LAPTOP-71N94SBC MINGW64 /c/GD/26_04_22 (main)
+$ gitk
